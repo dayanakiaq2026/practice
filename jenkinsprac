@@ -1,0 +1,22 @@
+pipeline {
+   agent any
+
+stages {
+   stage('build') {
+       echo'application building'
+  }
+}
+
+stage('test') {
+  steps {
+      echo 'application testing'
+  }
+}
+
+sateg('deploy') {
+  steps {
+    echo 'application deploying'
+ 
+  }
+  }
+ }
